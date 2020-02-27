@@ -61,7 +61,8 @@ document.getElementById('draw').addEventListener('click', function () {
   ctx.globalCompositeOperation = 'source-over'; // default value
 });
 
-document.getElementById('erase').addEventListener('click', function () {
+document.getElementById('erase').addEventListener('click', function (e) {
+  e.preventDefault();
   var ctx = canvas.getContext('2d');
   ctx.globalCompositeOperation = 'destination-out';
 });
