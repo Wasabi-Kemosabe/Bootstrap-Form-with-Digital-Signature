@@ -55,15 +55,20 @@
           <input type="email" class="form-control" id="inputEmail">
         </div>
       </div>
-      <div class="wrapper">
-        <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="signature-pad">Digital Signature</label>
+          <div class="wrapper">
+            <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+          </div>
+          <button id="save-png">Save as PNG</button>
+          <button id="save-jpeg">Save as JPEG</button>
+          <button id="save-svg">Save as SVG</button>
+          <button id="draw">Draw</button>
+          <button id="erase">Erase</button>
+          <button id="clear">Clear</button>
+        </div>
       </div>
-      <button id="save-png">Save as PNG</button>
-      <button id="save-jpeg">Save as JPEG</button>
-      <button id="save-svg">Save as SVG</button>
-      <button id="draw">Draw</button>
-      <button id="erase">Erase</button>
-      <button id="clear">Clear</button>
       <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
